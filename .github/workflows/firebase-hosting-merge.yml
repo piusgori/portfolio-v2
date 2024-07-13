@@ -21,3 +21,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PIOUS_PAYAS }}
           channelId: live
           projectId: pious-payas
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
