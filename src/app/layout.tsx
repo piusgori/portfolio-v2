@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
-
-const roboto = Roboto_Serif({ subsets: ["latin"] });
+import Providers from "./providers";
+import { font } from "@/utils/config";
 
 export const metadata: Metadata = {
   title: "Ian Pius | Software Developer & CIO | Expert in React, NodeJS, MongoDB",
@@ -16,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={font.className}>
+        <Providers>
+          {children}
+        </Providers>
+      </body>
     </html>
   );
 }
