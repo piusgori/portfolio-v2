@@ -48,6 +48,9 @@ importers:
       '@types/react-dom':
         specifier: ^18.3.0
         version: 18.3.0
+      '@types/react-vertical-timeline-component':
+        specifier: ^3.3.6
+        version: 3.3.6
       '@typescript-eslint/eslint-plugin':
         specifier: ^7.15.0
         version: 7.18.0(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
@@ -585,6 +588,9 @@ packages:
 
   '@types/react-reconciler@0.28.8':
     resolution: {integrity: sha512-SN9c4kxXZonFhbX4hJrZy37yw9e7EIxcpHCxQv5JUS18wDE5ovkQKlqQEkufdJCCMfuI9BnjUJvhYeJ9x5Ra7g==}
+
+  '@types/react-vertical-timeline-component@3.3.6':
+    resolution: {integrity: sha512-OUvyPXRjXvUD/SNLO0CW0GbIxVF32Ios5qHecMSfw6kxnK1cPULD9NV80EuqZ3WmS/s6BgbcwmN8k4ISb3akhQ==}
 
   '@types/react@18.3.3':
     resolution: {integrity: sha512-hti/R0pS0q1/xx+TsI73XIqk26eBsISZ2R0wUijXIngRK9R/e7Xw/cXVxQK7R5JjW+SV4zGcn5hXjudkN/pLIw==}
@@ -2232,6 +2238,10 @@ snapshots:
       '@types/react': 18.3.3
 
   '@types/react-reconciler@0.28.8':
+    dependencies:
+      '@types/react': 18.3.3
+
+  '@types/react-vertical-timeline-component@3.3.6':
     dependencies:
       '@types/react': 18.3.3
 
