@@ -1,23 +1,14 @@
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from "./components"
+import AppContextProvider from "./contexts/app.context"
+import MainPage from "./pages/main"
 
 function App() {
 
   return (
-    <div className='relative z-0 bg-primary'>
-      <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-        <Navbar />
-        <Hero />
+    <AppContextProvider>
+      <div className='relative z-0 bg-primary'>
+        <MainPage />
       </div>
-      <About />
-      <Experience />
-      <Tech />
-      <Works />
-      <Feedbacks />
-      <div className='relative z-0'>
-        <Contact />
-      </div>
-      <StarsCanvas />
-    </div>
+    </AppContextProvider>
   )
 }
 

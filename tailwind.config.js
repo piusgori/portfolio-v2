@@ -24,6 +24,16 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
       },
+      keyframes: {
+        ring: {
+          '0%': { transform: 'rotate(0deg)', boxShadow: '1px 5px 2px #e65c00' },
+          '50%': { transform: 'rotate(180deg)', boxShadow: '1px 5px 2px #18b201' },
+          '100%': { transform: 'rotate(360deg)', boxShadow: '1px 5px 2px #0456c8' },
+        },
+      },
+      animation: {
+        'spin-custom': 'ring 2s linear infinite',
+      },
     },
   },
   plugins: [],
