@@ -5,16 +5,17 @@ import { useAppContext } from '../contexts/app.context';
 const MainPage = () => {
 
     const { appLoaded } = useAppContext();
+  return (
+    <div className='relative z-0 bg-primary'>
 
-    if (!appLoaded) return <div className='max-h-[100vh] overflow-hidden'>
+      {!appLoaded && <div className='max-h-[100vh] overflow-hidden'>
         <Preloader />
         <Hero />
         <Contact />
         <StarsCanvas />
-    </div>
+      </div>}
 
-  return (
-    <>
+      {appLoaded && <>
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
@@ -28,7 +29,8 @@ const MainPage = () => {
           <Contact />
         </div>
         <StarsCanvas />
-    </>
+      </>}
+    </div>
   )
 }
 

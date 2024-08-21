@@ -1,14 +1,21 @@
+import AuthContextProvider from "./auth/auth-context"
 import AppContextProvider from "./contexts/app.context"
-import MainPage from "./pages/main"
+import Router from "./routes"
+import ThemeProvider from "./utils/theme";
+import { SnackbarProvider } from 'notistack';
 
 function App() {
 
   return (
-    <AppContextProvider>
-      <div className='relative z-0 bg-primary'>
-        <MainPage />
-      </div>
-    </AppContextProvider>
+    <AuthContextProvider>
+      <AppContextProvider>
+        <ThemeProvider>
+          <SnackbarProvider anchorOrigin={{ horizontal: 'right', vertical: 'top' }}>
+            <Router />
+          </SnackbarProvider>
+        </ThemeProvider>
+      </AppContextProvider>
+    </AuthContextProvider>
   )
 }
 
