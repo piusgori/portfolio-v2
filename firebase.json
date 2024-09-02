@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "piusgori",
     "public": "dist",
     "ignore": [
       "firebase.json",

@@ -26,10 +26,10 @@ jobs:
       - uses: pnpm/action-setup@v4
         with:
             version: 8
-      - run: pnpm install && pnpm build
+      - run: pnpm install --frozen-lockfile && pnpm build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PIOUS_PAYAS }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PIUS_PORTFOLIO }}
           channelId: live
-          projectId: pious-payas
+          projectId: pius-portfolio
