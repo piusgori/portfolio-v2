@@ -8,21 +8,20 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
+    freelancer,
+    lytfix,
+    theBand,
+    golang,
+    nextjs,
+    postgresql,
+    mobileApp,
+    monopoly,
+    haaya,
+    afya101,
   } from "../assets";
   
   export const navLinks = [
@@ -46,16 +45,16 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Mobile Developer",
       icon: mobile,
+    },
+    {
+      title: "Frontend Creator",
+      icon: creator,
     },
     {
       title: "Backend Developer",
       icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
     },
   ];
   
@@ -81,10 +80,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -97,74 +92,65 @@ import {
       icon: mongodb,
     },
     {
-      name: "Three JS",
-      icon: threejs,
+      name: "PostgreSQL",
+      icon: postgresql,
     },
     {
       name: "git",
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
+      name: "Next Js",
+      icon: nextjs,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "Mobile App Development",
+      icon: mobileApp,
     },
+    {
+      name: 'golang',
+      icon: golang
+    }
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Fullstack Software Developer",
+      company_name: "Freelancer",
+      icon: freelancer,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "January 2022 - August 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Worked on both frontend and backend development of client projects.",
+        "Collaborated with colleagues to create user interfaces and improve user experience using React.",
+        "Developed and maintained server side logic by building RESTful APIs using the Node.js and MongoDB.",
+        "Build interactive mobile applications using React Native and Flutter.",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Software Developer",
+      company_name: "Lytfix Technology Solutions",
+      icon: lytfix,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "August 2022 - April 2024",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Enhancing application performance, streamlining backend procedures, and guaranteeing smooth platform integration",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      title: "Chief Information Officer",
+      company_name: "The Tech Band Originals",
+      icon: theBand,
+      iconBg: "#383E56",
+      date: "April 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Setting the technology vision and strategy for the company, ensuring that all systems support business goals.",
+        "Overseeing major projects from inception to delivery, including budgeting, timelines, and resource allocation.",
+        "Leading both frontend and backend development, with proficiency in React JS, React Native, NextJS, NodeJS, GoLang, PostgreSql, and MongoDB.",
+        "Working with external vendors or partners to procure software or hardware and managing relationships.",
       ],
     },
   ];
@@ -198,9 +184,9 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Monopoly",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based platform that allows users to play monopoly online with friends.",
       tags: [
         {
           name: "react",
@@ -215,13 +201,13 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: monopoly,
+      source_code_link: "https://monopoly-gaming.web.app",
     },
     {
-      name: "Job IT",
+      name: "Haaya",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables people to hire their items to intereseted individuals.",
       tags: [
         {
           name: "react",
@@ -232,24 +218,24 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "node-js",
+          color: "green-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: haaya,
+      source_code_link: "https://www.haaya.co.ke",
     },
     {
-      name: "Trip Guide",
+      name: "Afya101",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A health based web application that helps users track their health and get advice from professionals.",
       tags: [
         {
-          name: "nextjs",
+          name: "reactjs",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
@@ -257,8 +243,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: afya101,
+      source_code_link: "https://afya101.co.ke",
     },
   ];
   

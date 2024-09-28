@@ -21,15 +21,27 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import golang from "./tech/golang.png";
+import nextjs from "./tech/next.svg";
+import postgresql from "./tech/postgresql.svg";
+import mobileApp from "./tech/mobile.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import freelancer from "./company/freelancer.png";
+import lytfix from "./company/lytfix.png";
+import theBand from "./company/theband.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import monopoly from "./monopoly.png";
+import haaya from './haaya.png'
+import afya101 from './afya.png'
+
+import website from './website.png'
 
 export {
   logo,
@@ -60,4 +72,15 @@ export {
   carrent,
   jobit,
   tripguide,
+  freelancer,
+  lytfix,
+  theBand,
+  golang,
+  nextjs,
+  postgresql,
+  mobileApp,
+  monopoly,
+  website,
+  haaya,
+  afya101
 };

@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from '../components'
+import { About, Contact, Experience, Hero, Navbar, StarsCanvas, Tech, Works } from '../components'
 import Preloader from '../components/preloader';
 import { useAppContext } from '../contexts/app.context';
 
@@ -24,7 +24,7 @@ const MainPage = () => {
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+        {/* <Feedbacks /> */}
         <div className='relative z-0'>
           <Contact />
         </div>
