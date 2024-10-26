@@ -16,7 +16,8 @@ const MainPage = () => {
       </div>} */}
 
       {/* {appLoaded && <> */}
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+      {/*  <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
+        <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
